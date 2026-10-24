@@ -2,7 +2,7 @@
 
 This checkout includes `AGENTS.md`. For owner development, clone the private
 [research-ops repository](https://github.com/cr15pykrnl/research-ops) alongside
-this repository and follow its [new-machine setup](../research-ops/readme.md#working-on-another-machine).
+this repository and follow its [new-machine setup](https://github.com/cr15pykrnl/research-ops/blob/main/readme.md#working-on-another-machine).
 Access uses the owner's research GitHub account; no credentials belong in Git.
 
 From the directory containing both checkouts:

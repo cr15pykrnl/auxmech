@@ -156,3 +156,29 @@ Private provenance, bulk data and recovered originals were excluded from Git.
 - Limits: no training, model validation or reproduction of published accuracy.
   Original data/version issues, missing inputs and unverified units remain as
   documented in [the audit](audit.md). Archive backup state remains unverified.
+
+## AuxMech rename and portability check, 2026-10-25
+
+The owner selected AuxMech as the repository name and chose public source plus
+HF data as the supported another-machine scope. The former GitHub repository
+name redirects to `cr15pykrnl/auxmech`; Git history and data revisions are retained.
+`AGENTS.md` and owner setup instructions are now tracked. Original figure paths
+remain stable, including the `figures/deformvis/` directory.
+
+A fresh source archive of commit `01e7529` was downloaded from GitHub into an
+isolated directory without `provenance/`, `papers/`, `manuscripts/`, `related-work/`
+or `hf-staging/`. A new Python 3.12 environment installed the two pinned consumer
+dependencies from cached wheels. The documented download plan then fetched all
+20 files afresh from the pinned public HF revision, without authentication.
+Verification and inspection passed for all 2,482 images, 24 cluster IDs and 213
+repeated pixel hashes. No original pickle or private inventory was required.
+
+This host could not resolve GitHub through the Git CLI, so remote `git clone` was
+not exercised successfully here. The source archive tests the exact published
+files; the bootstrap also passed a separate relocated-sibling-workspace test.
+This does not establish training or independent scientific reproducibility.
+
+Local private recovery manifests retain their original destination strings. The
+exporter's optional `--manifest-root` supports that historical root after a move;
+all 130 relocated original artifacts still match their recorded hashes. These
+owner-only materials remain outside the supported public checkout.
