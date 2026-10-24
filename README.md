@@ -7,9 +7,7 @@ modes in its study data; generalisation to other geometries is not established.
 
 ![Graphical abstract: inclined loading, plastic-hinge images, eight clusters, logistic regression and four reported deformation modes](figures/deformvis/assets/deformvis.png)
 
-Conceptual graphical abstract of the **published KNet1 method**. The separately
-released HF data belongs to the **KNet2 neural-network extension**, not a
-reproduction of that paper. [Editable figure and source notes](figures/deformvis/README.md).
+Conceptual graphical abstract of the **published KNet1 method**. [Editable figure and source notes](figures/deformvis/README.md).
 
 ## Paper
 
@@ -19,7 +17,11 @@ using machine learning**
 Gaurav Singh, Rahul Singh Dhari, Zia Javanbakht.
 *International Journal of Protective Structures*, 16(4), 853–877 (2025).
 First published online 13 October 2024.
+[Read the accepted manuscript](paper/accepted-manuscript.pdf) ·
 [Publisher and DOI](https://doi.org/10.1177/20414196241281069).
+
+The accepted manuscript is freely downloadable. See its [version and reuse
+notice](paper/README.md).
 
 The accepted manuscript lists Mathscapes Research and Griffith University for
 Singh; Mathscapes Research, Griffith University and AuxeticsLab at ADaPT for Dhari;
@@ -57,137 +59,37 @@ mechanisms of other auxetics and porous materials with plastic deformations.
 }
 ```
 
-## Clone and use the HF data
+## Published approach and scope
 
-This source package supports downloading, verifying and inspecting the pinned
-KNet2 partial recovery. It includes the consumer scripts and a maintainer exporter;
-the original training environment and private recovery inputs are excluded.
+The study extends plastic hinge tracing to classify deformation patterns in
+re-entrant honeycomb auxetics. Finite-element deformation images are processed
+and grouped into eight K-means image classes; logistic regression predicts the
+class, which is interpreted as a deformation mechanism. The paper reports four
+of six named modes in its study: X, distorted X, V and V+Z+V.
 
-```sh
-git clone https://github.com/cr15pykrnl/auxmech.git
-cd auxmech
-python3.12 -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-```
+This repository provides the accepted manuscript, citation and an editable
+conceptual graphical abstract. The paper-matched implementation and dataset
+have not been identified here, so this companion makes no clone-to-training or
+reproduced-accuracy claim. Generalisation to other geometries remains unestablished.
 
-Python 3.12, curl, PyArrow and Pillow are sufficient for data inspection. Training
-frameworks, original pickle files and an HF token are not required for this public
-download. Authentication, when needed for other HF work, uses your shared user
-login rather than a repository-local token.
+## Related data
 
-Download the exact reviewed dataset, check every file and inspect the images:
+The separate [KNet2 partial-recovery dataset](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial)
+belongs to an unpublished neural-network extension. It is not the published
+logistic-regression paper's reproduction dataset. Its card records missing inputs,
+unverified annotations/units and split/version limitations.
 
-```sh
-python -I scripts/hf-data.py plan
-curl -sSL --config .local/hf-download.conf
-python -I scripts/hf-data.py verify
-python -I scripts/inspect-hf-data.py
-```
+For optional downloading and inspection of every released HF file, see
+[contributing.md](contributing.md#optional-related-data). Downloads are pinned to
+an immutable revision and verified by size and SHA-256.
 
-The plan takes URLs and checksums from [hf-dataset.json](hf-dataset.json), pinned to
-HF revision `c9ff57794f7b40f7eed6499b3c0b23e3b918c14c`. No moving `main` reference is
-used. Downloads go to ignored `data/knet2/`; the ignored curl configuration contains
-public URLs and local destination paths, with no credentials. An interrupted or
-changed file fails verification; rerun the download before inspection.
+## Repository contents
 
-Expected results: **20 verified files, about 58.52 MB**, **2,482 grayscale images**
-of shape **126 × 199**, **24 cluster IDs** and **213 repeated image hashes** beyond
-their first occurrence. Inspection checks every image and prints counts, then
-writes `.local/knet2-sample.png` as a concrete loading example.
+- `paper/`: the accepted manuscript and its reuse notice.
+- `figures/deformvis/`: final graphical abstract, editable source and scientific source notes.
+- `AGENTS.md` and `contributing.md`: portable development instructions.
+- `hf-dataset.json`, `requirements.txt` and `scripts/`: optional related-data download/inspection helpers.
 
-If you already use the installed HF CLI, this is an alternative download step;
-run the same verification and inspection commands afterwards:
-
-```sh
-hf download cr15pykrnl/knet2-auxetic-deformation-partial --type dataset \
-  --revision c9ff57794f7b40f7eed6499b3c0b23e3b918c14c --local-dir data/knet2
-```
-
-For your own analysis, the portable interface is Parquet with PNG image bytes:
-
-```python
-import io
-import pyarrow.parquet as pq
-from PIL import Image
-
-table = pq.read_table("data/knet2/processed/images.parquet")
-sample = table.slice(0, 1).to_pylist()[0]
-image = Image.open(io.BytesIO(sample["image"]["bytes"]))
-print(sample["sample_id"], image.size, sample["cluster_id"])
-```
-
-This demonstrates data access. It does not execute the recovered training
-notebooks, restore a model or reproduce the published results.
-
-## Dataset identity and limitations
-
-[HF dataset and amended card](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial/blob/1af898e7baaa0c2a3194c309dd86c12228921de9/README.md),
-CC BY 4.0. The `recovered` split is an inventory, not a train/test partition.
-The release includes available raw inputs, lossless processed images, proposed
-notebook annotations, provenance and an explicit missing-input inventory.
-
-- Nine videos, three force/displacement tables, features/PCA state and checkpoint
-  are missing. There is no complete raw video/table pair for acquisition replay.
-- Physical units and annotation correctness remain unverified. At 22.5 degrees,
-  the available raw table does not reproduce the recovered numeric metadata under
-  the original formulas. Six other available angles match the arithmetic exactly.
-- The balanced recovery and reconstructed row split contain substantial shared
-  source frames across training and validation. Do not use this as an independent
-  benchmark or infer performance from the recovered draft.
-- KNet1 implementation and paper-matched dataset identity remain unresolved.
-  No model or reproduced-performance claim is provided.
-
-See the [audit](docs/audit.md) for quantified findings, severity, source locations,
-checks performed and their limits. HF viewer configuration and first-row service
-responses were checked; the full HF `datasets` Python client remains untested.
-
-## Source and recovery materials
-
-For development on another machine, see [contributing.md](contributing.md).
-`AGENTS.md` is versioned; shared agent rules and Git checks come from a sibling
-research-ops checkout. The repository is now named AuxMech; existing figure
-filenames and immutable source/data revisions are preserved.
-
-| Location | Purpose |
-| --- | --- |
-| `requirements.txt` | Minimal supported consumer environment. |
-| `scripts/hf-data.py` | Pinned download plan and full SHA-256/size verification. |
-| `scripts/inspect-hf-data.py` | Parquet/Pillow loading and all-sample checks. |
-| `hf-dataset.json` | Exact release identity and source-controlled file hashes. |
-| `figures/deformvis/` | Editable graphical abstract, exports and provenance. |
-| `scripts/prepare-hf-dataset.py` | Maintainer recovery exporter; requires private provenance and trusted originals. Not needed by consumers. |
-| `docs/hugging-face-plan.md` | HF release evidence, storage allocation and remaining publication work. |
-
-The following are preserved **local-only** materials, excluded from the intended
-source checkout: accepted manuscript under `papers/`; two recovered submission
-editions under `manuscripts/`; KNet2 draft, original module and notebooks under
-`related-work/`; unmatched expert labels under `data/`; private source-path
-inventories under `provenance/`; and bulk recovery assets under `hf-staging/`.
-These originals have not been silently repaired, renamed or represented as a
-working clone-to-training pipeline. Manuscript sharing rights remain separate
-from the dataset's CC BY 4.0 licence. The newly authored Python scripts under `scripts/` use the
-[MIT license](LICENSE). This grant excludes manuscripts, recovered originals,
-abstracts, figures and the separately licensed HF dataset.
-
-## Ignored directories and a fresh clone
-
-The supported public workflow is source plus the pinned HF dataset. A fresh
-clone can download, verify and inspect all released samples without any of the
-recovered originals listed below. It does not restore the historical training
-environment or reproduce the paper's results.
-
-| Ignored location | What it contains | Another-machine access |
-| --- | --- | --- |
-| `data/knet2/` | Verified public dataset downloaded by the consumer workflow. | Recreated with the pinned download commands above. |
-| Other `data/` files | An unmatched recovered expert-label workbook. | Excluded from the public workflow; its version identity is unresolved. |
-| `hf-staging/` | Original pickles, raw recovery inputs and prepared release packages. | Released portable content comes from HF; original recovery inputs remain private. |
-| `papers/`, `manuscripts/` | Accepted manuscript and recovered submission editions. | Use the paper DOI; these local editions are not bundled or rights-cleared here. |
-| `related-work/` | Recovered KNet2 draft, original code and notebooks. | Excluded from the public workflow; their original environment is incomplete. |
-| `provenance/` | Private source-path inventories and recovery checksums. | Private recovery metadata, unnecessary for consumer data access. |
-| `.local/`, `.venv/`, `__pycache__/` | Logs, previews, environments and caches. | Regenerated locally. |
-
-Keep these exclusions. The maintainer exporter requires trusted originals and
-private provenance; after relocating such an owner-only workspace, its optional
-`--manifest-root` identifies the historical root written in the original manifest.
-It does not change those records or waive source-hash verification.
+Private recovery inventories, older submissions, original pickle loaders and
+build intermediates are not required or included in this publication companion.
+The manuscript and figures are outside the scripts-only [MIT license](LICENSE).

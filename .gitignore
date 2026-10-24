@@ -1,15 +1,7 @@
-# Local records and recovered originals pending artifact-specific release review.
 .DS_Store
+._*
 .local/
+.venv/
 __pycache__/
 *.pyc
-.venv/
-/provenance/
 /data/
-/hf-staging/
-/papers/
-/manuscripts/
-/related-work/
-
-# These exclusions are an initial staging boundary, not rights clearance.
-# Move reviewed derivatives into explicitly selected release locations later.

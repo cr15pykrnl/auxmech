@@ -53,12 +53,10 @@ is asserted, and the separate KNet2 HF recovery is not used as visual evidence.
 - Results and Table 1, pp. 13–14: accepted class-to-mode interpretation.
 - Training method: the reported 60/20/20 partition.
 
-Private manuscript originals are not included in this figure directory. The
-accepted PDF's checksum and relevant page references are recorded in
-`provenance.json`, without machine-specific paths. The initial simple diagram
-was superseded; its source and preview are retained only in ignored local storage.
-Sharing this newly authored schematic does not establish permission to
-redistribute the manuscript or its original artwork.
+The accepted manuscript is included at [paper/accepted-manuscript.pdf](../../paper/accepted-manuscript.pdf).
+Its checksum and relevant page references are recorded in `provenance.json`.
+The original publisher figures are not redistributed as standalone assets; this
+new schematic is a conceptual redraw with its limitations stated above.
 
 ## Editable source and build
 

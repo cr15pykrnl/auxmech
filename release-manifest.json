@@ -131,6 +131,16 @@
       "pattern": "contributing.md",
       "access": "public",
       "reason": "Portable project instructions and owner setup; no private source paths or credentials."
+    },
+    {
+      "pattern": "paper/README.md",
+      "access": "public",
+      "reason": "Citation, accepted-manuscript identity and Sage author-sharing notice."
+    },
+    {
+      "pattern": "paper/accepted-manuscript.pdf",
+      "access": "public",
+      "reason": "Author-accepted version shared under Sage author archiving terms, with full attribution and non-commercial/no-derivative reuse notice."
     }
   ],
   "reviews": [
@@ -145,6 +155,12 @@
       "sha256": "ffb13dcf426bab96a89dc814492f33f46d4eb547093343dddd73b6d1c5b9e40b",
       "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
       "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
+    },
+    {
+      "path": "paper/accepted-manuscript.pdf",
+      "sha256": "0d227ae260471e076f676cdd0892d07317d66fe19ae9b6f07a97836afb0320ab",
+      "rights": "Author-accepted manuscript, not publisher version of record. Sage author archiving policy permits author posting of accepted manuscripts with free access, full citation and non-commercial/no-derivative reuse terms; paper/README.md supplies those terms. The owner approved publication of this unchanged accepted version.",
+      "privacy": "First-page title, scholarly authorship, accepted-manuscript watermark, DOI and journal details checked; PDF metadata inspected. Scholarly author/contact attribution is retained; no private recovery path inventory is included. Original bytes preserved."
     }
   ]
 }
