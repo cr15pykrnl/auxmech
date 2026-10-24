@@ -1,0 +1,3 @@
+# Portable HF dataset inspection, tested with Python 3.12.
+pyarrow==19.0.1
+pillow==11.3.0

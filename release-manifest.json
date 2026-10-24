@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "destination": "cr15pykrnl/deformvis",
+  "rules": [
+    {
+      "pattern": "README.md",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": ".gitignore",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "LICENSE",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "requirements.txt",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "hf-dataset.json",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "release-manifest.json",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "scripts/*.py",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "scripts/requirements-hf.txt",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "docs/*.md",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "figures/deformvis/README.md",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "figures/deformvis/provenance.json",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "figures/deformvis/deformvis.tex",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "figures/deformvis/assets/deformvis.pdf",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": "figures/deformvis/assets/deformvis.png",
+      "access": "public",
+      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
+    },
+    {
+      "pattern": ".local/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "AGENTS.md",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "provenance/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "data/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "hf-staging/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "papers/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "manuscripts/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "related-work/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": ".DS_Store",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "*/.DS_Store",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "*/__pycache__/*",
+      "access": "private",
+      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    }
+  ],
+  "reviews": [
+    {
+      "path": "figures/deformvis/assets/deformvis.pdf",
+      "sha256": "f3b6a3955017067fdc8cba0c29f1a0e8b907cb8d80e0ba1679248c337ffaf4aa",
+      "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
+      "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
+    },
+    {
+      "path": "figures/deformvis/assets/deformvis.png",
+      "sha256": "ffb13dcf426bab96a89dc814492f33f46d4eb547093343dddd73b6d1c5b9e40b",
+      "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
+      "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
+    }
+  ]
+}

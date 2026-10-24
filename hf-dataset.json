@@ -1,0 +1,109 @@
+{
+  "repo_id": "cr15pykrnl/knet2-auxetic-deformation-partial",
+  "repo_type": "dataset",
+  "revision": "c9ff57794f7b40f7eed6499b3c0b23e3b918c14c",
+  "licence": "CC-BY-4.0",
+  "scope": "Incomplete KNet2 recovery; not published KNet1 reproduction",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 88,
+      "sha256": "8bc1d7e7ffbdbbd54d28a1a410446ce859382ecbea0ff5dfcb14758300ecab40"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6378,
+      "sha256": "a0ff05a6e5e0970df8dc42ec0b0415d6b15ec688fc8d99556012aee88aa3b1d0"
+    },
+    {
+      "path": "checksums.sha256",
+      "bytes": 1705,
+      "sha256": "b6a1b9684d84e1548b5fcc8be0b39288c0ec32e9b9b7d16f46662489e5804390"
+    },
+    {
+      "path": "metadata/input-availability.csv",
+      "bytes": 978,
+      "sha256": "e70e60c83be76357d032ba53eb5c68d7722c2e5b3c80343441c597bfe7634106"
+    },
+    {
+      "path": "metadata/provenance.json",
+      "bytes": 3160,
+      "sha256": "370eac4c87dec5164f7544edd50ad48ef0d285bd73be02fdc2b3698a1466ecff"
+    },
+    {
+      "path": "metadata/schema.json",
+      "bytes": 2104,
+      "sha256": "9840154f6af5c5a0373e7a64e204afc37792f95ff45e3cd3f39bc89c0a4001bc"
+    },
+    {
+      "path": "metadata/validation.json",
+      "bytes": 2891,
+      "sha256": "7b722a2dc3bc6c323e16f435be521718140623cd39b3ab315249595a414f6026"
+    },
+    {
+      "path": "processed/clustering-scores.csv",
+      "bytes": 3034,
+      "sha256": "b320b90e75f57cd1488fd539bf0840e982fd08ce8c60a4f7e16bc76f68ce8c4e"
+    },
+    {
+      "path": "processed/images.parquet",
+      "bytes": 4021181,
+      "sha256": "130c94ab1b5bbc083b10637e117e7d28f3a8d7559730e2480e11b2c2c64e5699"
+    },
+    {
+      "path": "processed/registration-composites.parquet",
+      "bytes": 38507,
+      "sha256": "e0313e9bb926986468889899e50111ff1f98c0575c478a2926c125cde0139809"
+    },
+    {
+      "path": "raw/fd-data/Deg_07.5.csv",
+      "bytes": 5021,
+      "sha256": "bc915c56188cb8d4df5e46f30e13b7154a64129803ec98278321a65e1a9c7314"
+    },
+    {
+      "path": "raw/fd-data/Deg_10.0.csv",
+      "bytes": 4558,
+      "sha256": "7175df6d50e40e1b754e2f917f3e9290c11238bb399f3686075067c0b83e74e5"
+    },
+    {
+      "path": "raw/fd-data/Deg_15.0.csv",
+      "bytes": 5850,
+      "sha256": "6415a805ae172058d0b6c0ea2ce4ba2fc387dae29f678e3e36baf4e8b5693b77"
+    },
+    {
+      "path": "raw/fd-data/Deg_17.5.csv",
+      "bytes": 40594,
+      "sha256": "99a8789b3e5803b923c8d93a7de8d3e16e6993ac708584f7b446917868017f2c"
+    },
+    {
+      "path": "raw/fd-data/Deg_20.0.csv",
+      "bytes": 5003,
+      "sha256": "51cec0a25829a0d822d27eb6acf5a279ce6cd1839189d40c1995468d0b0e5daf"
+    },
+    {
+      "path": "raw/fd-data/Deg_22.5.csv",
+      "bytes": 10706,
+      "sha256": "2eda10ed05ad64a032fd1464ecf2f6dff54e407351fe7d59358a2b3f0c02ec3d"
+    },
+    {
+      "path": "raw/fd-data/Deg_25.0.csv",
+      "bytes": 5432,
+      "sha256": "b7d743c3cbd7b34a56847ca191eb2bc4f86ebb3409b129c4b17b6c7f96fc47e7"
+    },
+    {
+      "path": "raw/metadata.csv",
+      "bytes": 486,
+      "sha256": "afe6149b60c4f5f456e63a33140b9d8e7000c773b46bf67430f51f04ef6ca261"
+    },
+    {
+      "path": "raw/videos/Deg_00.0.avi",
+      "bytes": 54345216,
+      "sha256": "2a04900781fad780fecaab9984789f1dcb31900e2e91999422e54669e93d5a63"
+    }
+  ]
+}
