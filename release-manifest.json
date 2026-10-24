@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "destination": "cr15pykrnl/deformvis",
+  "destination": "cr15pykrnl/auxmech",
   "rules": [
     {
       "pattern": "README.md",
@@ -78,11 +78,6 @@
       "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
     },
     {
-      "pattern": "AGENTS.md",
-      "access": "private",
-      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
-    },
-    {
       "pattern": "provenance/*",
       "access": "private",
       "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
@@ -126,6 +121,16 @@
       "pattern": "*/__pycache__/*",
       "access": "private",
       "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+    },
+    {
+      "pattern": "AGENTS.md",
+      "access": "public",
+      "reason": "Portable project instructions and owner setup; no private source paths or credentials."
+    },
+    {
+      "pattern": "contributing.md",
+      "access": "public",
+      "reason": "Portable project instructions and owner setup; no private source paths or credentials."
     }
   ],
   "reviews": [

@@ -1,4 +1,4 @@
-# Deformvis: detecting deformation mechanisms in auxetics
+# AuxMech: detecting deformation mechanisms in auxetics
 
 This work investigates how re-entrant honeycomb auxetics deform under loading.
 The published study extends plastic hinge tracing with image processing,
@@ -64,8 +64,8 @@ KNet2 partial recovery. It includes the consumer scripts and a maintainer export
 the original training environment and private recovery inputs are excluded.
 
 ```sh
-git clone https://github.com/cr15pykrnl/deformvis.git
-cd deformvis
+git clone https://github.com/cr15pykrnl/auxmech.git
+cd auxmech
 python3.12 -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -144,6 +144,11 @@ responses were checked; the full HF `datasets` Python client remains untested.
 
 ## Source and recovery materials
 
+For development on another machine, see [contributing.md](contributing.md).
+`AGENTS.md` is versioned; shared agent rules and Git checks come from a sibling
+research-ops checkout. The repository is now named AuxMech; existing figure
+filenames and immutable source/data revisions are preserved.
+
 | Location | Purpose |
 | --- | --- |
 | `requirements.txt` | Minimal supported consumer environment. |
@@ -164,3 +169,25 @@ working clone-to-training pipeline. Manuscript sharing rights remain separate
 from the dataset's CC BY 4.0 licence. The newly authored Python scripts under `scripts/` use the
 [MIT license](LICENSE). This grant excludes manuscripts, recovered originals,
 abstracts, figures and the separately licensed HF dataset.
+
+## Ignored directories and a fresh clone
+
+The supported public workflow is source plus the pinned HF dataset. A fresh
+clone can download, verify and inspect all released samples without any of the
+recovered originals listed below. It does not restore the historical training
+environment or reproduce the paper's results.
+
+| Ignored location | What it contains | Another-machine access |
+| --- | --- | --- |
+| `data/knet2/` | Verified public dataset downloaded by the consumer workflow. | Recreated with the pinned download commands above. |
+| Other `data/` files | An unmatched recovered expert-label workbook. | Excluded from the public workflow; its version identity is unresolved. |
+| `hf-staging/` | Original pickles, raw recovery inputs and prepared release packages. | Released portable content comes from HF; original recovery inputs remain private. |
+| `papers/`, `manuscripts/` | Accepted manuscript and recovered submission editions. | Use the paper DOI; these local editions are not bundled or rights-cleared here. |
+| `related-work/` | Recovered KNet2 draft, original code and notebooks. | Excluded from the public workflow; their original environment is incomplete. |
+| `provenance/` | Private source-path inventories and recovery checksums. | Private recovery metadata, unnecessary for consumer data access. |
+| `.local/`, `.venv/`, `__pycache__/` | Logs, previews, environments and caches. | Regenerated locally. |
+
+Keep these exclusions. The maintainer exporter requires trusted originals and
+private provenance; after relocating such an owner-only workspace, its optional
+`--manifest-root` identifies the historical root written in the original manifest.
+It does not change those records or waive source-hash verification.

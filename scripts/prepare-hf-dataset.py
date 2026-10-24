@@ -278,6 +278,8 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--license-file', type=Path, required=True,
                         help='Downloaded CC BY 4.0 legalcode.txt from Creative Commons')
+    parser.add_argument('--manifest-root', type=Path,
+                        help='Historical checkout root recorded in the private recovery manifest')
     args = parser.parse_args()
     out = args.output.resolve()
     if out.exists():
@@ -288,7 +290,8 @@ def main():
     subprocess.run(['ffmpeg', '-v', 'error', '-i', str(BASE / 'raw/videos/Deg_00.0.avi'),
                     '-f', 'null', '-'], check=True, capture_output=True)
     entries = json.loads((ROOT / 'provenance/organisation-manifest.json').read_text())
-    manifest = {Path(x['destination']).relative_to(ROOT).as_posix(): x for x in entries}
+    manifest_root = args.manifest_root.resolve() if args.manifest_root else ROOT
+    manifest = {Path(x['destination']).relative_to(manifest_root).as_posix(): x for x in entries}
     registered, composites = recover('registered-images.pkl', manifest)
     labelled = recover('labelled-images-2.pkl', manifest)
     scores = recover('scores.pkl', manifest)

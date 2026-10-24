@@ -13,6 +13,3 @@ __pycache__/
 
 # These exclusions are an initial staging boundary, not rights clearance.
 # Move reviewed derivatives into explicitly selected release locations later.
-
-# Machine-local agent routing is maintained by research-ops.
-/AGENTS.md

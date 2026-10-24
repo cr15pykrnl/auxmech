@@ -128,7 +128,7 @@ manuscripts, recovered originals, abstracts, figures and the HF dataset. Figure
 rights/privacy inspections are bound to exact hashes in `release-manifest.json`.
 Private provenance, bulk data and recovered originals were excluded from Git.
 
-- Source: [cr15pykrnl/deformvis at `107168f`](https://github.com/cr15pykrnl/deformvis/tree/107168f5387c944fb08552379919003913cf53cd).
+- Source: [cr15pykrnl/auxmech at `107168f`](https://github.com/cr15pykrnl/auxmech/tree/107168f5387c944fb08552379919003913cf53cd).
   This is the reviewed consumer/exporter source release, not the historical data
   conversion revision. The original conversion's exporter hash is preserved.
 - Amended card: [`1af898e7baaa0c2a3194c309dd86c12228921de9`](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial/blob/1af898e7baaa0c2a3194c309dd86c12228921de9/README.md).
