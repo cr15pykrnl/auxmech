@@ -60,14 +60,14 @@ validate the mismatching 22.5-degree version.
 The README documents a GitHub clone, pinned public HTTPS download, verification
 and a concrete Parquet/Pillow inspection command. Its download/load portion was
 exercised from a clean source copy during the original audit. Subsequent source
-publication and clone checks are recorded in the release record. The original
+publication and source-download checks are recorded in the release record. The original
 audit itself did not create a repository, commit or push.
 
-The released HF data revision remains pinned in `hf-dataset.json`. Current local
-usage instructions include the new scientific caveats above; the original HF
-card describes partial recovery and unverified splits/units but does not yet
-contain these quantified audit findings. A local HF card amendment and updated exporter now include those findings.
-The amendment is not uploaded; the pinned release and its checksums are unchanged.
+The original HF data revision remains pinned in `hf-dataset.json`. The updated
+exporter and the published card amendment now include the quantified scientific
+caveats above. The new card revision and matching checksum-manifest update are
+recorded in [the release record](hugging-face-plan.md). All data artifacts and the
+original pinned release remain unchanged.
 
 The exporter is a maintainer recovery tool requiring private provenance and
 trusted original artifacts. It is not needed to use the released data. The

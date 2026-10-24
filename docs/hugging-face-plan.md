@@ -89,7 +89,7 @@ Evidence is packaged in `metadata/validation.json`, `metadata/provenance.json`,
 `metadata/schema.json`, `metadata/input-availability.csv` and `checksums.sha256`.
 The card uses the [official HF dataset-card format](https://huggingface.co/docs/hub/datasets-cards).
 
-## Local release record
+## Original dataset release record
 
 - Release: KNet2 partial recovery v0.1.0, prepared 2026-10-24.
 - Intended destination: `cr15pykrnl/knet2-auxetic-deformation-partial`, dataset.
@@ -117,18 +117,42 @@ The card uses the [official HF dataset-card format](https://huggingface.co/docs/
 - New audit evidence: the reconstructed balanced row split has source-frame
   overlap; the 22.5-degree raw table does not reproduce its recovered metadata.
   See [audit.md](audit.md) for quantified findings. Raw artifacts were preserved;
-  the pinned original HF card has not been amended with these findings.
+  at the original audit, the pinned HF card had not been amended with these findings.
   Publication does not establish scientific validity or reproduce results.
 
-## Prepared card amendment, 2026-10-25
+## Source and card publication, 2026-10-25
 
-The exporter now includes the quantified split-overlap and 22.5-degree metadata
-findings from [the audit](audit.md). A complete amended card is prepared at
-`.local/hf-card-amendment/README.md` for review and later upload. Its source is the
-pinned release card with only the scientific limitations section amended.
-No data files, release checksums or `hf-dataset.json` pins were changed.
+The owner authorized applying and publishing the prepared fixes, then selected
+MIT for the newly authored Python scripts under `scripts/`. The license excludes
+manuscripts, recovered originals, abstracts, figures and the HF dataset. Figure
+rights/privacy inspections are bound to exact hashes in `release-manifest.json`.
+Private provenance, bulk data and recovered originals were excluded from Git.
 
-After an authorized card upload, record its new immutable card revision separately
-from the original data revision. The owner selected MIT for newly authored Python scripts; figure rights/privacy
-reviews are recorded in `release-manifest.json`. Publication and reciprocal
-GitHub/HF revisions are recorded below after verification.
+- Source: [cr15pykrnl/deformvis at `107168f`](https://github.com/cr15pykrnl/deformvis/tree/107168f5387c944fb08552379919003913cf53cd).
+  This is the reviewed consumer/exporter source release, not the historical data
+  conversion revision. The original conversion's exporter hash is preserved.
+- Amended card: [`1af898e7baaa0c2a3194c309dd86c12228921de9`](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial/blob/1af898e7baaa0c2a3194c309dd86c12228921de9/README.md).
+  It links to the exact source revision above and adds the quantified split
+  overlap and 22.5-degree metadata mismatch. The checksum manifest was updated
+  atomically with the card; no dataset artifact changed.
+- Data pin: `c9ff57794f7b40f7eed6499b3c0b23e3b918c14c` remains unchanged in
+  `hf-dataset.json`. The original 20-file release and its checksums remain valid.
+- Accounts: GitHub and shared HF authentication verified as `cr15pykrnl`.
+  HF CLI network requests failed in this host; the amendment used the HTTPS API
+  with shared authentication supplied through a private in-memory pipe.
+- Source verification: all 17 hosted source blob IDs matched the reviewed commit.
+  The central snapshot/history audit passed, with no withheld files or findings.
+  Privacy, source-size and commit hooks passed; invalid identities and messages
+  were rejected by the installed hooks.
+- HF verification: downloaded card and checksum-manifest bytes match the prepared
+  amendment. Both remote trees contain the same 20 paths; only `README.md` and
+  `checksums.sha256` changed. All 19 checksum entries in the amended manifest
+  verify against the amended card and unchanged original artifacts.
+- Consumer verification: downloaded GitHub source archive contains the supported
+  scripts and runs without private provenance or original pickles. With a copy
+  of the already-verified pinned data, it verified all 20 files and inspected all
+  2,482 images, 24 clusters and 213 repeated pixel hashes. This check did not
+  download the bulk dataset anew or exercise the full HF datasets Python client.
+- Limits: no training, model validation or reproduction of published accuracy.
+  Original data/version issues, missing inputs and unverified units remain as
+  documented in [the audit](audit.md). Archive backup state remains unverified.

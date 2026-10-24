@@ -122,7 +122,7 @@ notebooks, restore a model or reproduce the published results.
 
 ## Dataset identity and limitations
 
-[HF dataset and card](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial),
+[HF dataset and amended card](https://huggingface.co/datasets/cr15pykrnl/knet2-auxetic-deformation-partial/blob/1af898e7baaa0c2a3194c309dd86c12228921de9/README.md),
 CC BY 4.0. The `recovered` split is an inventory, not a train/test partition.
 The release includes available raw inputs, lossless processed images, proposed
 notebook annotations, provenance and an explicit missing-input inventory.
