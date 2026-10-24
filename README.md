@@ -17,11 +17,10 @@ using machine learning**
 Gaurav Singh, Rahul Singh Dhari, Zia Javanbakht.
 *International Journal of Protective Structures*, 16(4), 853–877 (2025).
 First published online 13 October 2024.
-[Read the accepted manuscript](paper/accepted-manuscript.pdf) ·
 [Publisher and DOI](https://doi.org/10.1177/20414196241281069).
 
-The accepted manuscript is freely downloadable. See its [version and reuse
-notice](paper/README.md).
+Access the article through the publisher using the DOI above. Manuscript PDFs
+are not distributed in this repository.
 
 The accepted manuscript lists Mathscapes Research and Griffith University for
 Singh; Mathscapes Research, Griffith University and AuxeticsLab at ADaPT for Dhari;
@@ -67,7 +66,7 @@ and grouped into eight K-means image classes; logistic regression predicts the
 class, which is interpreted as a deformation mechanism. The paper reports four
 of six named modes in its study: X, distorted X, V and V+Z+V.
 
-This repository provides the accepted manuscript, citation and an editable
+This repository provides the paper link, citation and an editable
 conceptual graphical abstract. The paper-matched implementation and dataset
 have not been identified here, so this companion makes no clone-to-training or
 reproduced-accuracy claim. Generalisation to other geometries remains unestablished.
@@ -85,11 +84,10 @@ an immutable revision and verified by size and SHA-256.
 
 ## Repository contents
 
-- `paper/`: the accepted manuscript and its reuse notice.
 - `figures/deformvis/`: final graphical abstract, editable source and scientific source notes.
 - `AGENTS.md` and `contributing.md`: portable development instructions.
 - `hf-dataset.json`, `requirements.txt` and `scripts/`: optional related-data download/inspection helpers.
 
 Private recovery inventories, older submissions, original pickle loaders and
 build intermediates are not required or included in this publication companion.
-The manuscript and figures are outside the scripts-only [MIT license](LICENSE).
+The paper and figures are outside the scripts-only [MIT license](LICENSE).

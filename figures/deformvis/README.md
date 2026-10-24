@@ -53,7 +53,8 @@ is asserted, and the separate KNet2 HF recovery is not used as visual evidence.
 - Results and Table 1, pp. 13–14: accepted class-to-mode interpretation.
 - Training method: the reported 60/20/20 partition.
 
-The accepted manuscript is included at [paper/accepted-manuscript.pdf](../../paper/accepted-manuscript.pdf).
+The manuscript is not distributed here. Access the article through its
+[DOI](https://doi.org/10.1177/20414196241281069).
 Its checksum and relevant page references are recorded in `provenance.json`.
 The original publisher figures are not redistributed as standalone assets; this
 new schematic is a conceptual redraw with its limitations stated above.
