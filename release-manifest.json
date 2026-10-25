@@ -48,31 +48,6 @@
       "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
     },
     {
-      "pattern": "figures/deformvis/README.md",
-      "access": "public",
-      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
-    },
-    {
-      "pattern": "figures/deformvis/provenance.json",
-      "access": "public",
-      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
-    },
-    {
-      "pattern": "figures/deformvis/deformvis.tex",
-      "access": "public",
-      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
-    },
-    {
-      "pattern": "figures/deformvis/assets/deformvis.pdf",
-      "access": "public",
-      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
-    },
-    {
-      "pattern": "figures/deformvis/assets/deformvis.png",
-      "access": "public",
-      "reason": "Reviewed source release: newly authored scripts, research documentation, pinned data identity or conceptual figure."
-    },
-    {
       "pattern": ".local/*",
       "access": "private",
       "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
@@ -138,49 +113,78 @@
       "reason": "Manuscript PDFs are excluded; link to the publisher through the DOI."
     },
     {
-      "pattern": "figures/review-v1/README.md",
+      "pattern": "figures/abstracts/README.md",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/assets/auxmech.png",
+      "pattern": "figures/abstracts/assets/auxmech-plot.png",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/auxmech.tex",
+      "pattern": "figures/abstracts/assets/auxmech.png",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/provenance.json",
+      "pattern": "figures/abstracts/auxmech.gp",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/reported-results.csv",
+      "pattern": "figures/abstracts/auxmech.tex",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/build.sh",
+      "access": "public",
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/class-results.csv",
+      "access": "public",
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/plot-panel.tex",
+      "access": "public",
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/provenance.json",
+      "access": "public",
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/reported-results.csv",
+      "access": "public",
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "scripts/normalize-hf-images.py",
+      "access": "public",
+      "reason": "Owner-authorized data-viewer repair: MIT maintenance source and public immutable-release evidence; no private source paths or manuscript files."
+    },
+    {
+      "pattern": "docs/hf-release.md",
+      "access": "public",
+      "reason": "Owner-authorized data-viewer repair: MIT maintenance source and public immutable-release evidence; no private source paths or manuscript files."
     }
   ],
   "reviews": [
     {
-      "path": "figures/deformvis/assets/deformvis.pdf",
-      "sha256": "f3b6a3955017067fdc8cba0c29f1a0e8b907cb8d80e0ba1679248c337ffaf4aa",
-      "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
-      "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
+      "path": "figures/abstracts/assets/auxmech-plot.png",
+      "sha256": "7cd23ece86a2edf02773ea53d75c21e0545dd0be462c1405e8b59bff6143822c",
+      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
+      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
     },
     {
-      "path": "figures/deformvis/assets/deformvis.png",
-      "sha256": "ffb13dcf426bab96a89dc814492f33f46d4eb547093343dddd73b6d1c5b9e40b",
-      "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
-      "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
-    },
-    {
-      "path": "figures/review-v1/assets/auxmech.png",
-      "sha256": "91209d071db3e2194cb61b222fba164d3f7d3ba3c310eb171ec5b6c9d18ffc03",
-      "rights": "New owner-requested review composition. Original native geometry and/or previously reviewed accepted artwork; underlying publications cited in companion source notes. No publisher figure copied or new figure reuse license assigned.",
-      "privacy": "Review render inspected: scientific diagram, schematic interface or reported aggregate values only. No credentials, identifying machine paths or participant photographs. Native 9 pt black labels, one font family, page bounds and exact 4:3 output dimensions verified."
+      "path": "figures/abstracts/assets/auxmech.png",
+      "sha256": "52323e7f623d9615e6e4a28a731fd0e6d3801bb159510049ec77f01e1e2fdef0",
+      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
+      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
     }
   ]
 }

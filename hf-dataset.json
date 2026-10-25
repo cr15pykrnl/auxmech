@@ -1,7 +1,7 @@
 {
   "repo_id": "cr15pykrnl/knet2-auxetic-deformation-partial",
   "repo_type": "dataset",
-  "revision": "c9ff57794f7b40f7eed6499b3c0b23e3b918c14c",
+  "revision": "66364b17837e107555870e7b1df802db9caedaf3",
   "licence": "CC-BY-4.0",
   "scope": "Incomplete KNet2 recovery; not published KNet1 reproduction",
   "files": [
@@ -17,13 +17,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6378,
-      "sha256": "a0ff05a6e5e0970df8dc42ec0b0415d6b15ec688fc8d99556012aee88aa3b1d0"
+      "bytes": 9452,
+      "sha256": "d7a2e9757235ac02060d30eb391db46345ab0d84263d78c079a44d0007d07835"
     },
     {
       "path": "checksums.sha256",
       "bytes": 1705,
-      "sha256": "b6a1b9684d84e1548b5fcc8be0b39288c0ec32e9b9b7d16f46662489e5804390"
+      "sha256": "c98d5603657b1ba2eff6578034438e130760e947023336fc8ba10c452c3a4842"
     },
     {
       "path": "metadata/input-availability.csv",
@@ -37,13 +37,13 @@
     },
     {
       "path": "metadata/schema.json",
-      "bytes": 2104,
-      "sha256": "9840154f6af5c5a0373e7a64e204afc37792f95ff45e3cd3f39bc89c0a4001bc"
+      "bytes": 2207,
+      "sha256": "5f7ddbcacd1abb6d0682cbcfe1f1a727a1e52427586518756681e98b9cec8db4"
     },
     {
       "path": "metadata/validation.json",
-      "bytes": 2891,
-      "sha256": "7b722a2dc3bc6c323e16f435be521718140623cd39b3ab315249595a414f6026"
+      "bytes": 5656,
+      "sha256": "dbfda7007a38a6b86d9c6c996f389fcbd974654708e2bfb364db25e168e00752"
     },
     {
       "path": "processed/clustering-scores.csv",
@@ -52,13 +52,13 @@
     },
     {
       "path": "processed/images.parquet",
-      "bytes": 4021181,
-      "sha256": "130c94ab1b5bbc083b10637e117e7d28f3a8d7559730e2480e11b2c2c64e5699"
+      "bytes": 4021191,
+      "sha256": "2da524f49bf816d06cf6946330bb471097b4b5e4cbf5050d16d98a13fd012a1d"
     },
     {
       "path": "processed/registration-composites.parquet",
-      "bytes": 38507,
-      "sha256": "e0313e9bb926986468889899e50111ff1f98c0575c478a2926c125cde0139809"
+      "bytes": 38515,
+      "sha256": "bbd72d813149350cddbe872241c7abbd581f99531a7417d9d612e43013dfd24a"
     },
     {
       "path": "raw/fd-data/Deg_07.5.csv",

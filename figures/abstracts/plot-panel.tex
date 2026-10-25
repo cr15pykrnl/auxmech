@@ -1,0 +1,57 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\graphicspath{{../../.local/figures/plots/}}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta,calc}
+\newcommand{\markhinge}[2]{\fill (#1,#2) circle (.27mm);}
+\tikzset{
+ flow/.style={-{Stealth[length=1.7mm,width=1.15mm]},line width=.75pt},
+ pics/hingex/.style={code={
+   \foreach \i in {-3,-2,-1,0,1,2,3}{
+      \markhinge{\i}{.65*\i}\markhinge{\i}{-.65*\i}
+   }
+   \foreach \i in {-1,0,1}{\markhinge{\i}{.6}\markhinge{\i}{-.6}}
+ }},
+ pics/hingev/.style={code={
+   \foreach \i in {-3,-2,-1,0,1,2,3}{
+      \pgfmathsetmacro{\yy}{.5*abs(\i)+.8}
+      \markhinge{\i}{\yy}\markhinge{\i}{-\yy}
+   }
+ }},
+ pics/hingevzv/.style={code={
+   \foreach \i in {-3,-2,-1,0,1,2,3}{
+     \markhinge{\i}{2}\markhinge{\i}{-2}
+   }
+   \foreach \i in {-1.4,-.7,0,.7,1.4}{
+     \markhinge{-2.5}{\i}\markhinge{2.5}{\i}
+     \markhinge{-.8}{\i}\markhinge{.8}{\i}
+   }
+ }},
+ pics/hingedxa/.style={code={
+   \foreach \i in {-3,-2,-1,0,1,2,3}{
+     \markhinge{\i}{.35*\i+.4}\markhinge{\i}{-.2*\i-.4}
+     \markhinge{\i}{.35*\i+1.1}
+   }
+ }},
+ pics/hingedxb/.style={code={
+   \foreach \i in {-3,-2,-1,0,1,2,3}{
+     \markhinge{\i}{-.3*\i+.1}\markhinge{\i}{.2*\i-.5}
+     \markhinge{\i}{-.3*\i+1.0}
+   }
+ }}}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+ every node/.style={font=\fontsize{9}{11}\selectfont,inner sep=1pt,text=black}]
+\path[use as bounding box] (0,0) rectangle (240,94);
+\draw (8,23) rectangle (118,87) (122,23) rectangle (232,87);
+\node[anchor=west] at (12,82) {D. Class-wise performance: eight image-cluster labels};
+\node[anchor=west] at (126,82) {E. Learning-rate selection};
+\node[anchor=south west,inner sep=0pt] at (10,24)
+ {\input{../../.local/figures/plots/auxmech-plot.tex}};
+\draw (8,3) rectangle (232,20);
+\node[anchor=west,align=left] at (12,11) {88.08 percent test accuracy against cluster-derived labels.\\Independent deformation-mode ground truth is unavailable.};
+\node[anchor=east,align=right] at (228,11) {Singh, Dhari and Javanbakht (2025), 853--877.\\International Journal of Protective Structures 16(4).\\Source: Tables 1, 2 and 4; artwork: conceptual schematic.};
+\end{tikzpicture}
+\end{document}

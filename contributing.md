@@ -32,7 +32,15 @@ python -I scripts/hf-data.py verify
 python -I scripts/inspect-hf-data.py
 ```
 
-This downloads 20 files (58,521,549 bytes) into ignored `data/knet2/`, including
+This downloads 20 files (58,527,509 bytes) into ignored `data/knet2/`, including
 2,482 grayscale images in Parquet. The `recovered` split is an inventory, not a
 training/evaluation partition. The workflow needs no HF token or private files.
 See the dataset card for units, labels, missing-input and split limitations.
+
+## Dataset maintenance
+
+`scripts/normalize-hf-images.py` repairs the nullable Arrow image-path type in
+trusted release Parquet files. It writes a new file and verifies every value,
+embedded PNG byte and stored pixel hash. It never loads recovered pickle files.
+This patch changes storage typing, not data content, labels or scientific claims.
+The data/card revisions and verification are recorded in [the HF release note](docs/hf-release.md).

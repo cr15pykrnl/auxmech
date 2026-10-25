@@ -5,9 +5,9 @@ The published study extends plastic hinge tracing with image processing,
 K-means clustering and logistic regression. It reports four of six deformation
 modes in its study data; generalisation to other geometries is not established.
 
-![Graphical abstract: inclined loading, plastic-hinge images, eight clusters, logistic regression and four reported deformation modes](figures/deformvis/assets/deformvis.png)
+![Graphical abstract: plastic-hinge images, eight clusters, logistic regression, reported cluster-label performance and four identified mechanisms](figures/abstracts/assets/auxmech.png)
 
-Conceptual graphical abstract of the **published KNet1 method**. [Editable figure and source notes](figures/deformvis/README.md).
+Conceptual graphical abstract of the **published KNet1 method**. [Editable figure and source notes](figures/abstracts/README.md).
 
 ## Paper
 
@@ -80,11 +80,12 @@ unverified annotations/units and split/version limitations.
 
 For optional downloading and inspection of every released HF file, see
 [contributing.md](contributing.md#optional-related-data). Downloads are pinned to
-an immutable revision and verified by size and SHA-256.
+an immutable revision and verified by size and SHA-256. Release 0.1.1 fixes
+HF image-feature storage without changing data values; [verification details](docs/hf-release.md).
 
 ## Repository contents
 
-- `figures/deformvis/`: final graphical abstract, editable source and scientific source notes.
+- `figures/abstracts/`: final graphical abstract, editable source and scientific source notes.
 - `AGENTS.md` and `contributing.md`: portable development instructions.
 - `hf-dataset.json`, `requirements.txt` and `scripts/`: optional related-data download/inspection helpers.
 
