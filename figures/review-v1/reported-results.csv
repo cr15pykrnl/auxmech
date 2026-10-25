@@ -1,0 +1,4 @@
+learning_rate,test_accuracy_percent
+0.00001,46.29
+0.0001,79.83
+0.001,88.08

@@ -136,6 +136,31 @@
       "pattern": "paper/*",
       "access": "private",
       "reason": "Manuscript PDFs are excluded; link to the publisher through the DOI."
+    },
+    {
+      "pattern": "figures/review-v1/README.md",
+      "access": "public",
+      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+    },
+    {
+      "pattern": "figures/review-v1/assets/auxmech.png",
+      "access": "public",
+      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+    },
+    {
+      "pattern": "figures/review-v1/auxmech.tex",
+      "access": "public",
+      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+    },
+    {
+      "pattern": "figures/review-v1/provenance.json",
+      "access": "public",
+      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+    },
+    {
+      "pattern": "figures/review-v1/reported-results.csv",
+      "access": "public",
+      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
     }
   ],
   "reviews": [
@@ -150,6 +175,12 @@
       "sha256": "ffb13dcf426bab96a89dc814492f33f46d4eb547093343dddd73b6d1c5b9e40b",
       "rights": "Newly authored native TikZ conceptual schematic, prepared at the owner's request and authorized for source publication. Scholarly ideas are attributed to the published KNet1 paper; original publisher figures and manuscript pages are excluded. No figure reuse license is asserted by the scripts-only MIT grant.",
       "privacy": "PNG visually inspected; PDF extracted text and metadata inspected. Schematic cells and labels only, no participants, private study records or identifying machine paths. Both exports match recorded figure provenance hashes."
+    },
+    {
+      "path": "figures/review-v1/assets/auxmech.png",
+      "sha256": "91209d071db3e2194cb61b222fba164d3f7d3ba3c310eb171ec5b6c9d18ffc03",
+      "rights": "New owner-requested review composition. Original native geometry and/or previously reviewed accepted artwork; underlying publications cited in companion source notes. No publisher figure copied or new figure reuse license assigned.",
+      "privacy": "Review render inspected: scientific diagram, schematic interface or reported aggregate values only. No credentials, identifying machine paths or participant photographs. Native 9 pt black labels, one font family, page bounds and exact 4:3 output dimensions verified."
     }
   ]
 }

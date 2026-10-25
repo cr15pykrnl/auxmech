@@ -1,0 +1,42 @@
+{
+  "review_version": 1,
+  "selection": "Owner feedback pending; existing selected figure preserved",
+  "refined_brief": "Connect finite-element plastic-hinge images, eight K-means labels and logistic regression to detected deformation mechanisms; add the reported test-accuracy comparison without presenting cluster labels as independent ground truth.",
+  "source_dois": [
+    "10.1177/20414196241281069"
+  ],
+  "source_evidence": "Accepted manuscript figures 2\u20134 and 7, Table 1 (p. 14), and Table 2 (p. 15). Replotted test accuracies for learning rates 0.00001, 0.0001 and 0.001 are 46.29%, 79.83% and 88.08%; reported-results.csv preserves the values. These are three model-setting results, not error bars or independent replications. The plot uses a common 0\u2013100% scale.",
+  "limitations": "KNet1 published study only. Four of six named mechanisms were identified. Test accuracy is against cluster-derived labels; the paper explicitly notes the absence of independent ground truth. No new training or KNet2 accuracy result is implied.",
+  "canvas_mm": [
+    240,
+    180
+  ],
+  "canvas_ratio": "4:3",
+  "png_pixels": [
+    2400,
+    1800
+  ],
+  "review_pixels": [
+    960,
+    720
+  ],
+  "native_font_size_pt": 9,
+  "font_family": "NimbusSanL-Regu, Helvetica-compatible",
+  "style": "Black linework on white; functional black data marks; no decorative shading",
+  "reused_inputs": [],
+  "image_generation": "No new image generation; existing accepted artwork reused where applicable",
+  "authoring_files": [
+    {
+      "path": "assets/auxmech.png",
+      "sha256": "91209d071db3e2194cb61b222fba164d3f7d3ba3c310eb171ec5b6c9d18ffc03"
+    },
+    {
+      "path": "auxmech.tex",
+      "sha256": "e38cf7af5d962883ff231ff2396d2732e55816d693192ba5b60e78c43afa13e2"
+    },
+    {
+      "path": "reported-results.csv",
+      "sha256": "1843d757d490e671dddd6ac26314e79a67012311b4f9b061b6a2bdda8a1ab271"
+    }
+  ]
+}
