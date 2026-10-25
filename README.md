@@ -5,7 +5,7 @@ The published study extends plastic hinge tracing with image processing,
 K-means clustering and logistic regression. It reports four of six deformation
 modes in its study data; generalisation to other geometries is not established.
 
-![Graphical abstract: plastic-hinge images, eight clusters, logistic regression, reported cluster-label performance and four identified mechanisms](figures/abstracts/assets/auxmech.svg)
+[![Graphical abstract: plastic-hinge images, eight clusters, logistic regression, reported cluster-label performance and four identified mechanisms](figures/abstracts/assets/auxmech.png)](figures/abstracts/assets/auxmech.svg)
 
 Conceptual graphical abstract of the **published KNet1 method**. [Editable figure and source notes](figures/abstracts/README.md).
 

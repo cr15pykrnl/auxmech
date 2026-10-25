@@ -54,7 +54,7 @@
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "a50c8bb5bcb7041b0afb5038259971428167eae2eff8c55971a6f3f5f4c4ad2c"
+      "sha256": "8c92b6febcae29999811b95ca50e6eda9d8ecf52961ef1291be8e9811ff84d57"
     },
     {
       "path": "assets/auxmech-plot.png",
@@ -110,5 +110,6 @@
       "path": "reported-results.csv",
       "sha256": "1843d757d490e671dddd6ac26314e79a67012311b4f9b061b6a2bdda8a1ab271"
     }
-  ]
+  ],
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
 }
