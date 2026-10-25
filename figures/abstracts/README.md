@@ -4,9 +4,9 @@ Plastic-hinge deformation images are clustered into labels and classified by log
 
 ## Figures
 
-- [auxmech](assets/auxmech.png): editable source `auxmech.tex`.
+- [auxmech](assets/auxmech.svg): editable source `auxmech.tex`.
 
-- [Standalone quantitative figure](assets/auxmech-plot.png): gnuplot sources, CSV values and `plot-panel.tex`.
+- [Standalone quantitative figure](assets/auxmech-plot.svg): gnuplot sources, CSV values and `plot-panel.tex`.
 
 ## Scientific evidence
 
@@ -29,15 +29,15 @@ From the repository root:
 sh figures/abstracts/build.sh
 ```
 
-The script regenerates the selected PNGs. Generated PDF intermediates, native
+The script regenerates the selected SVGs and anti-aliased PNG fallbacks. Generated PDF intermediates, native
 gnuplot exports and compiler logs stay in ignored `.local/figures/`; remove that
 folder after checking the outputs. The published package retains editable TikZ,
 plot scripts/data, required artwork, source evidence and checksums.
 
 Abstracts use a 240 × 180 mm canvas and export at 2400 × 1800 px (4:3), with
 960 × 720 px review views during builds. All native labels are 9 pt
-Helvetica-compatible. Final PNGs are strictly black/white. A uniform 0.85
-threshold is applied at export; original artwork inputs remain intact.
+Helvetica-compatible. Artwork and native labels remain black on white. PNG fallbacks use anti-aliased
+greyscale edges; no one-bit threshold is applied. Original artwork inputs remain intact.
 Informational dots, hatches, dash styles and markers encode categories.
 
 Inspect full-size and README-size renders after editing. Check scientific
@@ -45,3 +45,14 @@ meaning, units, marker counts, label clearance, padding, legend scope and
 bottom-right citations. A faithful replot is not an independent reproduction.
 No publisher figures or manuscript PDFs are included, and no new asset reuse
 license is asserted. Source data and illustrative content remain distinct.
+
+## Selected export formats
+
+SVG is the selected version embedded in the project README. Anti-aliased PNG
+fallbacks accompany each SVG. PDF intermediates stay in ignored local storage;
+no PDFs are published. Poppler's `pdftocairo` is required for SVG export.
+
+These SVGs contain native vector geometry, plots and glyph outlines with no
+embedded bitmap images. Keep the TeX sources for editable labels.
+
+PNG fallbacks: [auxmech-plot](assets/auxmech-plot.png) · [auxmech](assets/auxmech.png)

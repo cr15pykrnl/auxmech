@@ -20,19 +20,24 @@
   ],
   "native_font": "9 pt Helvetica-compatible / NimbusSanL-Regu",
   "rendering": {
-    "mode": "--bilevel",
-    "uniform_luminance_threshold": 0.85,
-    "final_png_values": [
-      0,
-      255
-    ],
-    "geometry": "Native TikZ; gnuplot panels composed at native size; source artwork preserved"
+    "mode": "Anti-aliased grayscale PNG and SVG (--svg; no --bilevel)",
+    "authored_palette": "Black strokes and labels on white; gray raster edge pixels provide coverage only.",
+    "png_bit_depth": 8,
+    "png_color_type": 0,
+    "text_alpha_bits": 4,
+    "graphics_alpha_bits": 4,
+    "svg_exporter": "Poppler pdftocairo",
+    "svg_embedded_raster_images": {
+      "assets/auxmech-plot.svg": 0,
+      "assets/auxmech.svg": 0
+    },
+    "pdf_policy": "Ignored local compilation intermediate; excluded from release."
   },
-  "verification": "All selected abstracts and standalone plots rebuilt from the consolidated portable sources; all eight PNG SHA-256 digests match the reviewed outputs exactly. Native 9 pt Helvetica-compatible labels, bounds and one-bit exports verified. No new scientific experiment or model run.",
+  "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run.",
   "plots": {
     "tool": "gnuplot 6.0.3 headless cairolatex",
     "wrapper": "plot-panel.tex",
-    "standalone": "assets/auxmech-plot.png",
+    "standalone": "assets/auxmech-plot.svg",
     "scripts": [
       "auxmech.gp"
     ],
@@ -45,31 +50,41 @@
   "image_generation": "No new image generation; existing label-free artwork reused where applicable.",
   "reused_inputs": [],
   "schema_version": 1,
-  "status": "Selected graphical abstracts; prepared for owner-reviewed commits. No new experiment or simulation.",
+  "status": "Owner-selected SVGs with anti-aliased PNG fallbacks. No new experiment or simulation.",
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "30f4f58d33db357cdc62c6b3ddf5ace5ab0b75155a300330835f9baaedb51893"
+      "sha256": "a50c8bb5bcb7041b0afb5038259971428167eae2eff8c55971a6f3f5f4c4ad2c"
     },
     {
       "path": "assets/auxmech-plot.png",
-      "sha256": "7cd23ece86a2edf02773ea53d75c21e0545dd0be462c1405e8b59bff6143822c",
+      "sha256": "752a4c7bac29f1dfb7b79adfc41b8d946bbfdb6a8df4743f92859e0f4bb246e9",
       "pixels": [
         2400,
         940
       ],
-      "png_bit_depth": 1,
+      "png_bit_depth": 8,
       "png_color_type": 0
     },
     {
+      "path": "assets/auxmech-plot.svg",
+      "sha256": "4795654e4fc8e11b1979b15f00dc5c4ed24608ca83e3e7ec9973b162aa34aade",
+      "embedded_raster_images": 0
+    },
+    {
       "path": "assets/auxmech.png",
-      "sha256": "52323e7f623d9615e6e4a28a731fd0e6d3801bb159510049ec77f01e1e2fdef0",
+      "sha256": "93dab280db78e650ab1fbc6d4e4573df4522b83dcf8e6fa6b4ad2b58ba4d9ba6",
       "pixels": [
         2400,
         1800
       ],
-      "png_bit_depth": 1,
+      "png_bit_depth": 8,
       "png_color_type": 0
+    },
+    {
+      "path": "assets/auxmech.svg",
+      "sha256": "7290f5431e6c10204f4d7b19ab801a67161b4eb7222cf9afd058297928d59e32",
+      "embedded_raster_images": 0
     },
     {
       "path": "auxmech.gp",
@@ -81,7 +96,7 @@
     },
     {
       "path": "build.sh",
-      "sha256": "1f9fcdc8319d5ae7e623dccdf267c36dee1d9af223b62fc7b3a8ef3a00124e6a"
+      "sha256": "49436438b173503b6e4053a7f7f689a1b645456982082d4a2b48f64419fbceaf"
     },
     {
       "path": "class-results.csv",

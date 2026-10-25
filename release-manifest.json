@@ -171,20 +171,42 @@
       "pattern": "docs/hf-release.md",
       "access": "public",
       "reason": "Owner-authorized data-viewer repair: MIT maintenance source and public immutable-release evidence; no private source paths or manuscript files."
+    },
+    {
+      "pattern": "figures/abstracts/assets/auxmech-plot.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
+    },
+    {
+      "pattern": "figures/abstracts/assets/auxmech.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
     }
   ],
   "reviews": [
     {
       "path": "figures/abstracts/assets/auxmech-plot.png",
-      "sha256": "7cd23ece86a2edf02773ea53d75c21e0545dd0be462c1405e8b59bff6143822c",
-      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
-      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
+      "sha256": "752a4c7bac29f1dfb7b79adfc41b8d946bbfdb6a8df4743f92859e0f4bb246e9",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/auxmech.png",
-      "sha256": "52323e7f623d9615e6e4a28a731fd0e6d3801bb159510049ec77f01e1e2fdef0",
-      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
-      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
+      "sha256": "93dab280db78e650ab1fbc6d4e4573df4522b83dcf8e6fa6b4ad2b58ba4d9ba6",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/auxmech-plot.svg",
+      "sha256": "4795654e4fc8e11b1979b15f00dc5c4ed24608ca83e3e7ec9973b162aa34aade",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/auxmech.svg",
+      "sha256": "7290f5431e6c10204f4d7b19ab801a67161b4eb7222cf9afd058297928d59e32",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
     }
   ]
 }

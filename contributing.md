@@ -44,3 +44,6 @@ trusted release Parquet files. It writes a new file and verifies every value,
 embedded PNG byte and stored pixel hash. It never loads recovered pickle files.
 This patch changes storage typing, not data content, labels or scientific claims.
 The data/card revisions and verification are recorded in [the HF release note](docs/hf-release.md).
+
+Selected figures use SVG with anti-aliased PNG fallbacks. Rebuilding SVG requires
+Poppler's `pdftocairo`; PDF intermediates remain local and ignored.
