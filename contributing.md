@@ -47,3 +47,10 @@ The data/card revisions and verification are recorded in [the HF release note](d
 
 Selected figures use SVG with anti-aliased PNG fallbacks. Rebuilding SVG requires
 Poppler's `pdftocairo`; PDF intermediates remain local and ignored.
+
+## Paper 2 review
+
+Continue the work-in-progress review in [papers/paper-2/](papers/paper-2/README.md).
+Use its single candidate bibliography; preserve citation keys and document
+metadata corrections and screening decisions. Its unverified records are separate
+from the published Paper 1 reference list and the KNet2 partial dataset.

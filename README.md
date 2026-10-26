@@ -5,6 +5,17 @@ The published study extends plastic hinge tracing with image processing,
 K-means clustering and logistic regression. It reports four of six deformation
 modes in its study data; generalisation to other geometries is not established.
 
+## Papers in this project
+
+| Paper | Status | Materials |
+| --- | --- | --- |
+| 1: Deformation-mechanism detection using logistic regression | Published | [Publication](#paper) |
+| 2: Auxetic ML review | Work in progress | [Review and candidate references](papers/paper-2/README.md) |
+
+[Paper collection](papers/README.md). The graphical abstract and reported findings
+below concern Paper 1. Paper 2 currently contains an unverified candidate library;
+no review results or completed manuscript are claimed.
+
 [![Graphical abstract: plastic-hinge images, eight clusters, logistic regression, reported cluster-label performance and four identified mechanisms](figures/abstracts/assets/auxmech.png)](figures/abstracts/assets/auxmech.svg)
 
 Conceptual graphical abstract of the **published KNet1 method**. [Editable figure and source notes](figures/abstracts/README.md).
@@ -45,6 +56,8 @@ and image labels created by K-means clustering algorithm. The success of the
 proposed automated approach lays the foundation for identifying the deformation
 mechanisms of other auxetics and porous materials with plastic deformations.
 
+[Full reference lists and verification notes](bibliography/README.md).
+
 ```bibtex
 @article{singh2025automated,
   title = {Automated detection of deformation mechanisms in re-entrant honeycomb auxetics using machine learning},
@@ -54,7 +67,8 @@ mechanisms of other auxetics and porous materials with plastic deformations.
   volume = {16},
   number = {4},
   pages = {853--877},
-  doi = {10.1177/20414196241281069}
+  doi = {10.1177/20414196241281069},
+  url = {https://doi.org/10.1177/20414196241281069}
 }
 ```
 

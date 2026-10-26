@@ -68,9 +68,14 @@
       "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
     },
     {
-      "pattern": "papers/*",
+      "pattern": "papers/*.pdf",
       "access": "private",
-      "reason": "Local governance, private recovery records, restricted originals, bulk assets or generated working files."
+      "reason": "Manuscript binaries are excluded; reviewed paper documentation and citation metadata have separate public rules."
+    },
+    {
+      "pattern": "papers/*.docx",
+      "access": "private",
+      "reason": "Manuscript binaries are excluded; reviewed paper documentation and citation metadata have separate public rules."
     },
     {
       "pattern": "manuscripts/*",
@@ -181,6 +186,26 @@
       "pattern": "figures/abstracts/assets/auxmech.svg",
       "access": "public",
       "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
+    },
+    {
+      "pattern": "bibliography/*.bib",
+      "access": "public",
+      "reason": "Final published-paper reference metadata checked against authoritative records; per-entry source comments and bibliography README preserve verification notes."
+    },
+    {
+      "pattern": "bibliography/README.md",
+      "access": "public",
+      "reason": "Bibliography source, coverage, corrections and verification limitations."
+    },
+    {
+      "pattern": "papers/*.md",
+      "access": "public",
+      "reason": "Owner-requested WIP review scope and candidate-library instructions; no recovered manuscript or validated findings claimed."
+    },
+    {
+      "pattern": "papers/paper-2/bibliography/*.bib",
+      "access": "public",
+      "reason": "Citation metadata derivative with original keys and explicit unverified status; abstracts and private/source-manager fields excluded."
     }
   ],
   "reviews": [

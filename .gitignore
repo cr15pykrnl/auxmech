@@ -12,3 +12,7 @@ __pycache__/
 /figures/**/*.fdb_latexmk
 /figures/**/*.synctex.gz
 /figures/**/*.pdf
+
+# Link publications; keep manuscript binaries outside the companion.
+*.pdf
+*.docx
