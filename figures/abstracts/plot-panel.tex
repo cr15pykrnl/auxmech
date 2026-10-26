@@ -41,17 +41,18 @@
      \markhinge{\i}{-.3*\i+1.0}
    }
  }}}
+\tikzset{frameone/.style={line width=1.5pt,line join=miter,line cap=butt},frametwo/.style={line width=1pt,line join=miter,line cap=butt}}
 \begin{document}
-\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=miter,
  every node/.style={font=\fontsize{9}{11}\selectfont,inner sep=1pt,text=black}]
 \path[use as bounding box] (0,0) rectangle (240,94);
-\draw (8,23) rectangle (118,87) (122,23) rectangle (232,87);
-\node[anchor=west] at (12,82) {D. Class-wise performance: eight image-cluster labels};
-\node[anchor=west] at (126,82) {E. Learning-rate selection};
+\draw[frameone] (3,23) rectangle (118,91) (122,23) rectangle (237,91);
+\node[anchor=west] at (7,86) {D. Class-wise performance: eight image-cluster labels};
+\node[anchor=west] at (126,86) {E. Learning-rate selection};
 \node[anchor=south west,inner sep=0pt] at (10,24)
  {\input{../../.local/figures/plots/auxmech-plot.tex}};
-\draw (8,3) rectangle (232,20);
-\node[anchor=west,align=left] at (12,11) {88.08 percent test accuracy against cluster-derived labels.\\Independent deformation-mode ground truth is unavailable.};
-\node[anchor=east,align=right] at (228,11) {Singh, Dhari and Javanbakht (2025), 853--877.\\International Journal of Protective Structures 16(4).\\Source: Tables 1, 2 and 4; artwork: conceptual schematic.};
+\draw[frameone] (3,3) rectangle (237,19);
+\node[anchor=west,align=left] at (7,11) {88.08 percent test accuracy against cluster-derived labels.\\Independent deformation-mode ground truth is unavailable.};
+\node[anchor=east,align=right] at (233,11) {Singh, Dhari and Javanbakht (2025), 853--877.\\International Journal of Protective Structures 16(4).\\Source: Tables 1, 2 and 4; artwork: conceptual schematic.};
 \end{tikzpicture}
 \end{document}

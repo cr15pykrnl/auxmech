@@ -186,27 +186,27 @@
   "reviews": [
     {
       "path": "figures/abstracts/assets/auxmech-plot.png",
-      "sha256": "752a4c7bac29f1dfb7b79adfc41b8d946bbfdb6a8df4743f92859e0f4bb246e9",
+      "sha256": "07e5774ab1fd49f32b5dcfe167616f0bf31e9ffe1ada9bb19b1f80e7b811d952",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/auxmech.png",
-      "sha256": "93dab280db78e650ab1fbc6d4e4573df4522b83dcf8e6fa6b4ad2b58ba4d9ba6",
+      "sha256": "3d627605317f47cc88b9a2534f794b48b78a5b3e2e252691dbde92c72576006a",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/auxmech-plot.svg",
-      "sha256": "4795654e4fc8e11b1979b15f00dc5c4ed24608ca83e3e7ec9973b162aa34aade",
+      "sha256": "d793b9dbd9f3492d0382e7142bc01508c60be035170234ebe1d366633d2635e1",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/auxmech.svg",
-      "sha256": "7290f5431e6c10204f4d7b19ab801a67161b4eb7222cf9afd058297928d59e32",
+      "sha256": "adb83e5bd154dae4a75ae13d00f1b428bcf961ba985a94c18f1c8e701261be74",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     }
   ]
 }

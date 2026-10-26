@@ -45,7 +45,8 @@
       "reported-results.csv",
       "class-results.csv"
     ],
-    "transforms": "Table 2 percentages unchanged. Table 4 normalized diagonal multiplied by 100; labels rounded to one decimal, CSV preserves six decimal places. Hatched bars encode the three explicitly labeled learning-rate settings. No uncertainty bars or new model runs."
+    "transforms": "Table 2 percentages unchanged. Table 4 normalized diagonal multiplied by 100; labels rounded to one decimal, CSV preserves six decimal places. Hatched bars encode the three explicitly labeled learning-rate settings. No uncertainty bars or new model runs.",
+    "learning_rate_display": "Scientific e notation: 1e-5, 1e-4, 1e-3; underlying values unchanged."
   },
   "image_generation": "No new image generation; existing label-free artwork reused where applicable.",
   "reused_inputs": [],
@@ -54,11 +55,11 @@
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "8c92b6febcae29999811b95ca50e6eda9d8ecf52961ef1291be8e9811ff84d57"
+      "sha256": "489febfc736c36e74ec9141022be0be5f7498f3ca0c4056ee959965e539afdb9"
     },
     {
       "path": "assets/auxmech-plot.png",
-      "sha256": "752a4c7bac29f1dfb7b79adfc41b8d946bbfdb6a8df4743f92859e0f4bb246e9",
+      "sha256": "07e5774ab1fd49f32b5dcfe167616f0bf31e9ffe1ada9bb19b1f80e7b811d952",
       "pixels": [
         2400,
         940
@@ -68,12 +69,12 @@
     },
     {
       "path": "assets/auxmech-plot.svg",
-      "sha256": "4795654e4fc8e11b1979b15f00dc5c4ed24608ca83e3e7ec9973b162aa34aade",
+      "sha256": "d793b9dbd9f3492d0382e7142bc01508c60be035170234ebe1d366633d2635e1",
       "embedded_raster_images": 0
     },
     {
       "path": "assets/auxmech.png",
-      "sha256": "93dab280db78e650ab1fbc6d4e4573df4522b83dcf8e6fa6b4ad2b58ba4d9ba6",
+      "sha256": "3d627605317f47cc88b9a2534f794b48b78a5b3e2e252691dbde92c72576006a",
       "pixels": [
         2400,
         1800
@@ -83,16 +84,16 @@
     },
     {
       "path": "assets/auxmech.svg",
-      "sha256": "7290f5431e6c10204f4d7b19ab801a67161b4eb7222cf9afd058297928d59e32",
+      "sha256": "adb83e5bd154dae4a75ae13d00f1b428bcf961ba985a94c18f1c8e701261be74",
       "embedded_raster_images": 0
     },
     {
       "path": "auxmech.gp",
-      "sha256": "0ea8e04b759fa5106c82d31eceec6532b76129a11cbfd1e612877a66e942fdfb"
+      "sha256": "635acf11be3264c3dc0b4b7541c1882e1c0e7a5d107f6869fabbe9a2a9845ac2"
     },
     {
       "path": "auxmech.tex",
-      "sha256": "a34afc9b4f460ad0678496cf330b0f49133f016a1fbcddbc26bc3e6ae5a50d7f"
+      "sha256": "18fd31c3767fa42933f0b5175b7ad6fb3f449290fef59deca87bcba652c073b0"
     },
     {
       "path": "build.sh",
@@ -104,12 +105,58 @@
     },
     {
       "path": "plot-panel.tex",
-      "sha256": "36f80a8a1443dda6ec2a65d9bb715d3a9190551278385effae6e948a4fef448b"
+      "sha256": "6e1ff8c12704e48f826cd4b32bfbfa01651843107e0515a79d987846e3aa00d4"
     },
     {
       "path": "reported-results.csv",
       "sha256": "1843d757d490e671dddd6ac26314e79a67012311b4f9b061b6a2bdda8a1ab271"
     }
   ],
-  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged.",
+  "frame_layout": {
+    "page_outer_margin_mm": 3,
+    "main_panel_gutter_mm": 4,
+    "audit": "All exported PNG outer ink margins measured equal to within one pixel; renderer checks native font size and page bounds. Visual review covers nested clearances and optical balance.",
+    "exports": {
+      "auxmech-plot.png": {
+        "pixels": [
+          2400,
+          940
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "07e5774ab1fd49f32b5dcfe167616f0bf31e9ffe1ada9bb19b1f80e7b811d952"
+      },
+      "auxmech.png": {
+        "pixels": [
+          2400,
+          1800
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "3d627605317f47cc88b9a2534f794b48b78a5b3e2e252691dbde92c72576006a"
+      }
+    },
+    "plot_content_centers_mm": [
+      60.5,
+      179.5
+    ],
+    "plot_content_centering_verification": "Gnuplot data-field centers at 60.5 and 179.5 mm; labels inspected separately at review size for optical balance. This replaces the previous complete-ink bounding-box centering.",
+    "marker_label_clearance": "Native gnuplot direct-label offsets increased to 1.8 character units; visible marker-to-label gaps inspected.",
+    "border_width_pt": {
+      "main": 1.5,
+      "nested": 1
+    },
+    "process_arrow_center_y_mm": 134,
+    "corner_join": "Square miter joins; frame caps butt."
+  },
+  "split_visualization": "Proportional 60/20/20 percent training/validation/testing strip; no sample counts inferred."
 }

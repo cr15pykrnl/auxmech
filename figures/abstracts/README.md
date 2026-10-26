@@ -56,3 +56,16 @@ These SVGs contain native vector geometry, plots and glyph outlines with no
 embedded bitmap images. Keep the TeX sources for editable labels.
 
 PNG fallbacks: [auxmech-plot](assets/auxmech-plot.png) · [auxmech](assets/auxmech.png)
+
+Outer frames use equal 3 mm page margins on every side, with 4 mm gutters
+between main panels/rows. Nested frames retain consistent visible clearances. Artwork proportions and native font sizes are preserved.
+
+The data fields are centered horizontally in their panels, with axis titles, ticks
+and direct labels checked separately for optical balance. Marker labels have a visible clearance
+from the marker edge; captions/subtitles follow their panel centerline.
+
+Learning-rate ticks use scientific e notation. The 60/20/20 allocation is shown
+as a proportional strip; process arrows follow the top panels’ vertical midpoint.
+
+Main frames use 1.5 pt borders; nested frames use 1 pt, with square miter joins. Plot axes and illustration
+strokes retain their independent weights.
